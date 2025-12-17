@@ -1,0 +1,57 @@
+# Same syntax as .gitignore
+
+# deps / builds
+vendor/
+node_modules/
+dist/
+build/
+coverage/
+tmp/
+temp/
+.cache/
+.parcel-cache/
+.turbo/
+.next/
+.nuxt/
+.vite/
+
+# laravel runtime
+storage/
+bootstrap/cache/
+public/storage
+public/hot
+public/build
+public/mix-manifest.json
+
+# secrets
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+**/*secret*
+**/*apikey*
+**/*credentials*
+
+# logs / dumps / binaries
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+dump/
+dumps/
+*.zip
+*.7z
+*.tar
+*.gz
+*.rar
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp4
+*.mov
+*.mkv

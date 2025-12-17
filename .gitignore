@@ -1,0 +1,126 @@
+###############################################################################
+# OS / Editor junk
+###############################################################################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+###############################################################################
+# Secrets / env (never commit)
+###############################################################################
+.env
+.env.*
+!.env.example
+!.env.testing
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+**/*secret*
+**/*apikey*
+**/*credentials*
+
+###############################################################################
+# PHP / Composer
+###############################################################################
+/vendor/
+/composer.phar
+/.phpunit.result.cache
+/.phpunit.cache
+/phpunit.xml
+phpunit.xml
+/.php_cs.cache
+/.php-cs-fixer.cache
+/.phpstan.cache
+/.psalm.cache
+/.phan/
+*.phar
+
+###############################################################################
+# Laravel (new & old)
+###############################################################################
+/bootstrap/cache/*.php
+!/bootstrap/cache/.gitignore
+
+/storage/*.key
+/storage/app/public/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+/storage/logs/
+/public/storage
+/public/hot
+/public/build
+/public/mix-manifest.json
+
+# Laravel legacy (hay gặp ở bản cũ)
+# (nếu project bạn không có thì cũng không sao)
+/app/storage/
+/bootstrap/compiled.php
+
+###############################################################################
+# Node / JS
+###############################################################################
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+/.pnpm-store/
+/.npm/
+/.yarn/cache/
+/.yarn/unplugged/
+/.yarn/build-state.yml
+/.eslintcache
+/.stylelintcache
+/.parcel-cache
+/.turbo
+/.next
+/.nuxt
+/.svelte-kit
+/.vite
+/dist/
+/build/
+/coverage/
+/tmp/
+/temp/
+
+###############################################################################
+# Logs / dumps / big artifacts
+###############################################################################
+*.log
+logs/
+*.sql
+*.sqlite
+*.sqlite3
+dump/
+dumps/
+*.zip
+*.7z
+*.tar
+*.gz
+*.rar
+*.mp4
+*.mov
+*.mkv
+*.psd
+
+###############################################################################
+# IDEs (choose your style)
+###############################################################################
+# JetBrains: simplest = ignore all
+.idea/
+*.iml
+
+# VS Code: thường không commit, trừ vài file team dùng chung
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+###############################################################################
+# AI tool artifacts (nếu có tạo ra)
+###############################################################################
+# Cursor rules có thể nằm trong .cursor/ => ĐỪNG ignore .cursor/ nếu bạn dùng .cursor/rules
+# .cursor/
